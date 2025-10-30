@@ -1,0 +1,20 @@
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/<your-username>/<repo-name>.git
+git push -u origin main
+
+
+
+git init → initializes a new local Git repository
+
+git add . → stages all files for commit
+
+git commit -m "first commit" → commits the files with a message
+
+git branch -M main → renames the default branch to main
+
+git remote add origin <url> → links your local repo to the GitHub repo
+
+git push -u origin main → pushes your code to GitHub
