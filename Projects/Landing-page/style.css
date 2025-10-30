@@ -32,7 +32,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2vw;
+    /* gap: 1vw; */
+    /* padding: 0 10px; */
     font-size: 11px;
 }
 
@@ -43,7 +44,7 @@ body{
     font-weight:600;
     font-size: 1em;
     line-height: 10vh;
-    
+    padding: 0 2vh;
 }
 
 .left{
@@ -68,6 +69,17 @@ body{
     justify-content: right;
     align-items: center;
     padding-right: 2vw;
+}
+
+.hover-links a{
+    /* width: vw; */
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.hover-links a:hover{
+    background-color: #e5e5e5;
+    transition: 100ms ease-in-out 200ms;
 }
 
 /* triggers on screen size */
@@ -273,7 +285,7 @@ hr{
     justify-content: center;
     align-items: center;
     /* flex-wrap: wrap; */
-    gap: 1rem;
+    gap: 2vw;
 }
 
 .car{
@@ -309,8 +321,9 @@ hr{
 
 .octa-text p{
     color: #4A4F54;
-    font-size: 1vw;
+    font-size: 1.8vh;
     font-family: montserrat, Arial, Helvetica, sans-serif;
+    margin-bottom: 1.5vw;
 }
 
 .octa-btn{
@@ -355,8 +368,328 @@ hr{
     text-decoration: underline;
 }
 
+
+/* octa car section  */
+.octa-sec{
+    width: fit-content;
+    height: 90%;
+    width: fit-content;
+    background-color: var(--primary-color);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /* margin: 10vh 0; */
+    padding: 10vh 9vh;
+    gap: 3vh;
+}
+
+.octa-sec-text h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.octa-sec-details{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: self-start;
+}
+
+.octa-sec-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: self-start;
+}
+
+.octa-sec-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    justify-content: center;
+}
+
+.octa-sec-img{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 2vh;
+    /* width: fit-content; */
+    height: 90%;
+    margin: 0;
+    padding: 0;
+}
+
+.octa-sec-img1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2vh;
+}
+
+.octa-sec-img1 img{
+height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.octa-sec-img2{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2vh;
+}
+
+.octa-sec-img2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.octa-sec-img2 img:first-child{
+    /* width: 50%; */
+}
+
+.octa-sec-img2-mobile{
+    display: none;
+}
+
+.sec-130{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: var(--section-color);
+    gap: 7vh;
+}
+
+
+@media (max-width:766px) {
+        body{
+        background-color: lightblue;
+        padding-top: 0;
+    }
+    .navbar{
+        grid-template-columns: 1fr 2fr 1fr;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-links{
+        display: none;
+    }
+
+    .ham-menu {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        padding-left: 2vw;
+    }
+
+    .ham-link a{
+        font-size: 3vw;
+        font-weight: 600;
+    }
+
+    .logo h2{
+        font-size: 4vw;
+    }
+
+
+    .hero{
+        min-height: 70vh;
+    }
+
+    .hero-section{
+    width: 100%;
+    height: 86vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    overflow: hidden;
+    position: relative;
+    }
+
+    .hero-video{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .hero-video video{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 20%;
+    }
+
+
+    .h-text-edit{
+        width: 100%;
+        gap: 3vw;
+    }
+
+    .h-text-edit h1{
+        font-size: 4vw;
+    }
+
+    .h-text-edit P{
+        font-size: 3vw;
+    }
+
+    .h-text-edit a{
+        font-size: 2vw;
+        padding: 2vw 4vw;
+    }
+
+    .disclaimer{
+        background-color: var(--primary-color);
+        width: 100%;
+        height: 8vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .disclaimer p{
+        margin: 2vh 2vw;
+        /* text-align: center; */
+    }
+
+    .variant{
+        height: 50vh;
+        /* background-color: rosybrown; */
+    }
+
+    .cars{
+        height: 50vh;
+        /* background-color: rosybrown; */
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: flex-start;
+        /* overflow: scroll; */
+        overflow-y: hidden;
+        overflow-x: auto;
+        scroll-snap-type: mandatory;
+        /* scrollbar-width: 0px; */
+    }
+
+
+    .car{
+        /* margin-right: 2vw; */
+        width: max-content;
+        height: fit-content;
+        /* background-color: wheat; */
+    }
+
+    .octa{
+        width: 100%;
+    }
+
+    .octa-img{
+        width: 100%;
+    }
+
+    .octa-img img{
+        width: 100%;
+        object-fit: cover;
+        height: 20vh;
+    }
+
+    .octa-text{
+        width: 100%;
+    }
+
+    .octa-text h1{
+        font-size: 3vh;
+    }
+
+    .octa-text p{
+        font-size: 1vh;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .octa-btn{
+        margin-top: 1vh;
+        margin-bottom: 5vh;
+    }
+
+    .explore-btn{
+        font-size: 1.2vh;
+        padding: 2vh 4vh;
+    }
+
+    .build-btn{
+        font-size: 1.5vh;
+    }
+
+    
+    .octa-sec{
+        /* grid-template-rows: 1fr 2fr; */
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0;padding: 10vh 2vh;
+    }
+    
+    .octa-sec-details{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 2vh;
+    }
+
+    .octa-sec-details p{
+        font-size: 1.3vh;
+    }
+
+    .octa-sec-btn{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .octa-explore-btn{
+        font-size: 1.7vh;
+        padding: 2vh 5vh;
+    }
+
+    .octa-build-btn{
+        font-size: 1.9vh;
+    }
+
+
+    .octa-sec-img{
+        gap: 0;
+    }
+
+    .octa-sec-img2{
+        display: none;
+    }
+
+    .octa-sec-img1{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .octa-sec-img1 img{
+        object-fit: none;
+        /* height: auto; */
+    }
+
+    .octa-sec-img2-mobile{
+        display: flex;
+    }
+
+    .octa-sec-img2-mobile img{
+        display: flex;
+            height: 100%;
+    width: 100%;
+    object-fit: cover;
+    }
+}
+
+
 /* tablet and mobile view */
-@media (max-width:1023px){
+@media (min-width:766px) and (max-width:1023px){
     body{
         background-color: lightblue;
         padding-top: 0;
@@ -450,13 +783,95 @@ hr{
         /* text-align: center; */
     }
 
-
     .variant{
-        width: 100%;
-        height: auto;
+        height: 50vh;
+        /* background-color: rosybrown; */
     }
 
     .cars{
+        height: 50vh;
+        /* background-color: rosybrown; */
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: flex-start;
+        /* overflow: scroll; */
+        overflow-y: hidden;
+        overflow-x: auto;
+        scroll-snap-type: mandatory;
+        /* scrollbar-width: 0px; */
+    }
+
+
+    .car{
+        /* margin-right: 2vw; */
+        width: max-content;
+        height: fit-content;
+        /* background-color: wheat; */
+    }
+
+    .octa{
+        width: 100%;
+    }
+
+    .octa-img{
+        width: 100%;
+    }
+
+    .octa-img img{
+        width: 100%;
+        height: 20vh;
+    }
+
+    .octa-text{
+        width: 100%;
+    }
+
+    .octa-text p{
+        font-size: 1vh;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .octa-btn{
+        margin-top: 1vh;
+        margin-bottom: 5vh;
+    }
+
+    .explore-btn{
+        font-size: 1.2vh;
+        padding: 2vh 4vh;
+    }
+
+    .build-btn{
+        font-size: 1.5vh;
+    }
+
+    .octa-sec{
+        /* grid-template-rows: 1fr 2fr; */
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .octa-sec-details{
+        display: flex;
+        flex-direction: row;
+        align-items: anchor-center;
+    }
+
+    .octa-sec-details p{
+        font-size: 2.3vh;
+    }
+
+    .octa-sec-btn{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .octa-build-btn{
+        font-size: 1.4vh;
     }
 
 }
