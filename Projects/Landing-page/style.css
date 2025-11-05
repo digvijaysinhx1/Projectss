@@ -248,6 +248,12 @@ hr{
     /* left: 0; */
 }
 
+.h-text-edit a:hover{
+    background-color: var(--secondary-color);
+    transition: 100ms ease-in-out 200ms;
+    border: 1px solid #ffffff;
+}
+
 .disclaimer{
     width: 100%;
     height: 5vh;
@@ -442,19 +448,20 @@ height: 100%;
     object-fit: cover;
 }
 
-.octa-sec-img2 img:first-child{
-    /* width: 50%; */
-}
-
 .octa-sec-img2-mobile{
     display: none;
 }
 
-.sec-130{
-    display: grid;
+.car-130-sec{
     grid-template-columns: 2fr 1fr;
-    background-color: var(--section-color);
-    gap: 7vh;
+}
+
+.car-130-img1{
+    grid-template-columns: 1fr 2fr;
+}
+
+.car-130-img2{
+    grid-template-columns: 1fr 1fr;
 }
 
 
@@ -648,12 +655,12 @@ height: 100%;
     }
 
     .octa-explore-btn{
-        font-size: 1.7vh;
-        padding: 2vh 5vh;
+        font-size: 1.5vh;
+        padding: 1.5vh 5vh;
     }
 
     .octa-build-btn{
-        font-size: 1.9vh;
+        font-size: 1.5vh;
     }
 
 
@@ -684,6 +691,11 @@ height: 100%;
             height: 100%;
     width: 100%;
     object-fit: cover;
+    }
+
+    
+    .car-130-sec{
+        flex-direction: column;
     }
 }
 
